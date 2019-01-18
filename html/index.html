@@ -15,95 +15,180 @@
    <link rel="stylesheet" href="pandoc.css" type="text/css" />
    <meta name="viewport" content="width=device-width">
    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
+
+   <script>
+     // Fade Effect when scrolling 
+      $(document).ready(function() {
+
+            $(window).scroll( function(){
+            
+                  $('.faded').each( function(i){
+                        
+                        let bottomObj = $(this).position().top + $(this).outerHeight();
+                        let bottomWin = $(window).scrollTop() + $(window).height();
+                        
+                        if( bottomWin > bottomObj ){
+                        
+                        $(this).animate({'opacity':'1'},500);
+                              
+                        }
+                        
+                  }); 
+            
+            });
+      
+      });
+
+   </script>
+
    <div id="header">
       <h1 class="title">fs0c131y</h1>
    </div>
-   <p><img id="profile" src="https://avatars0.githubusercontent.com/u/36547191?s=400&u=6cb3c270b0891bd24172758da63052e0928ca6be&v=4"
-         width="90" height="90"></p>
-   <p>French security researcher. Worst nightmare of Oneplus, Wiko, UIDAI, Kimbho, Donald Daters and others. Not
-      completely schizophrenic. Not related to USANetwork.</p>
+
+   <div class="outterImg">
+
+      <div class="innerImg">
+
+            <img id="profile" src="https://avatars0.githubusercontent.com/u/36547191?s=400&u=6cb3c270b0891bd24172758da63052e0928ca6be&v=4" width="120" height="120">
+
+      </div>
+
+   </div>
+
+   <div>
+
+      <p style="text-align: center;">French security researcher. Worst nightmare of Oneplus, Wiko, UIDAI, Kimbho, Donald Daters and others. Not
+                  completely schizophrenic. Not related to USANetwork.</p>
+
+   </div>
+
+   <br>
+
    <h2 id="cves">CVEs</h2>
-   <p><strong>CVE-2018-20555</strong> - <a href="https://github.com/fs0c131y/CVE-2018-20555" class="uri">https://github.com/fs0c131y/CVE-2018-20555</a></p>
-   <p><strong>CVE-2019-6447</strong> - <a href="https://github.com/fs0c131y/ESFileExplorerOpenPortVuln" class="uri">https://github.com/fs0c131y/ESFileExplorerOpenPortVuln</a></p>
-   <h2 id="press-appearances">Press appearances</h2>
-   <p><strong>A popular WordPress plugin leaked access tokens capable of hijacking Twitter accounts</strong>
-      (Techcrunch) - <a href="https://techcrunch.com/2019/01/17/wordpress-plugin-leaked-twitter-account-access-tokens/"
-         class="uri">https://techcrunch.com/2019/01/17/wordpress-plugin-leaked-twitter-account-access-tokens/</a></p>
-   <p><strong>ES File Explorer : un célèbre explorateur de fichiers pour Android met en péril le contenu du smartphone</strong>
-      (Numerama) - <a href="https://www.numerama.com/tech/456076-es-file-explorer-un-celebre-explorateur-de-fichiers-pour-android-met-en-peril-le-contenu-du-smartphone.html"
-         class="uri">https://www.numerama.com/tech/456076-es-file-explorer-un-celebre-explorateur-de-fichiers-pour-android-met-en-peril-le-contenu-du-smartphone.html</a></p>
-   <p><strong>ES File Explorer Flaws Put 100 Million Users' Data at Risk, Fix Promised</strong> (BleepingComputer) - <a
-         href="https://www.bleepingcomputer.com/news/security/es-file-explorer-flaws-put-100-million-users-data-at-risk-fix-promised/"
-         class="uri">https://www.bleepingcomputer.com/news/security/es-file-explorer-flaws-put-100-million-users-data-at-risk-fix-promised/</a></p>
-   <p><strong>Researcher shows how popular app ES File Explorer exposes Android device data</strong> (Techcrunch) - <a
-         href="https://techcrunch.com/2019/01/16/android-app-es-file-explorer-expose-data/" class="uri">https://techcrunch.com/2019/01/16/android-app-es-file-explorer-expose-data/</a></p>
-   <p><strong>Researchers downplay role of fake news and bots in France’s Yellow Vest protests</strong> (VentureBeat) -
-      <a href="https://venturebeat.com/2018/12/26/researchers-downplay-role-of-fake-news-and-bots-in-frances-yellow-vest-protests/"
-         class="uri">https://venturebeat.com/2018/12/26/researchers-downplay-role-of-fake-news-and-bots-in-frances-yellow-vest-protests/</a></p>
-   <p><strong>The co-opting of French unrest to spread disinformation</strong> (Wired) - <a href="https://www.wired.com/story/co-opting-french-unrest-spread-disinformation/"
-         class="uri">https://www.wired.com/story/co-opting-french-unrest-spread-disinformation/</a></p>
-   <p><strong>Gilets jaunes : soupçons d’ingérence en réseaux</strong> (Libération) - <a href="https://www.liberation.fr/france/2018/12/09/gilets-jaunes-soupcons-d-ingerence-en-reseaux_1697012"
-         class="uri">https://www.liberation.fr/france/2018/12/09/gilets-jaunes-soupcons-d-ingerence-en-reseaux_1697012</a></p>
-   <p><strong>« Gilets jaunes » : soupçons de manipulation sur les réseaux sociaux</strong> (Le Monde) - <a href="https://www.lemonde.fr/pixels/article/2018/12/09/gilets-jaunes-soupcons-de-manipulation-sur-les-reseaux-sociaux_5394890_4408996.html"
-         class="uri">https://www.lemonde.fr/pixels/article/2018/12/09/gilets-jaunes-soupcons-de-manipulation-sur-les-reseaux-sociaux_5394890_4408996.html</a></p>
-   <p><strong>Donald Daters, a dating app for Trump supporters, leaked its users’ data</strong> (Techcrunch) - <a href="https://techcrunch.com/2018/10/15/donald-daters-a-dating-app-for-trump-supporters-leaked-its-users-data"
-         class="uri">https://techcrunch.com/2018/10/15/donald-daters-a-dating-app-for-trump-supporters-leaked-its-users-data/</a></p>
-   <p><strong>'Donald Daters' the New Dating App for Trump Supporters Leaked Its Users' Data on Launch Day</strong>
-      (Time) - <a href="http://time.com/5426460/donald-daters-app-leak" class="uri">http://time.com/5426460/donald-daters-app-leak/</a></p>
-   <p><strong>A strange phone number crept into Indian contact lists, and no one knew why</strong> (The Verge) - <a
-         href="https://www.theverge.com/2018/8/3/17648738/india-phone-number-unknown-privacy-data-contacts-uidai" class="uri">https://www.theverge.com/2018/8/3/17648738/india-phone-number-unknown-privacy-data-contacts-uidai</a></p>
-   <p><strong>Hacker Steals Customers' Text Messages from Android Spyware Company</strong> (Motherboard) - <a href="https://motherboard.vice.com/en_us/article/qvm44m/hacker-steals-text-messages-android-spyware-company-spyhuman"
-         class="uri">https://motherboard.vice.com/en_us/article/qvm44m/hacker-steals-text-messages-android-spyware-company-spyhuman</a></p>
-   <p><strong>Terri, Regina, Pearl : d’où viennent ces « bots » pornographiques qui envahissent Twitter ?</strong> (Le
-      Monde) - <a href="https://www.lemonde.fr/pixels/article/2018/02/22/terri-regina-pearl-d-ou-viennent-ces-bots-pornographiques-qui-envahissent-twitter_5260996_4408996.html"
-         class="uri">https://www.lemonde.fr/pixels/article/2018/02/22/terri-regina-pearl-d-ou-viennent-ces-bots-pornographiques-qui-envahissent-twitter_5260996_4408996.html</a></p>
-   <p><strong>TRAI chief shares Aadhaar number on Twitter with a dare, personal details leaked</strong> (India Today) -
-      <a href="https://www.indiatoday.in/india/story/twitterati-respond-to-trai-chief-s-aadhaar-dare-1299213-2018-07-29"
-         class="uri">https://www.indiatoday.in/india/story/twitterati-respond-to-trai-chief-s-aadhaar-dare-1299213-2018-07-29</a></p>
-   <p><strong>India PM Modi app sparks social media furore</strong> (BBC News) - <a href="https://www.bbc.com/news/world-asia-india-43538178"
-         class="uri">https://www.bbc.com/news/world-asia-india-43538178</a></p>
-   <p><strong>Baba Ramdev: India guru's 'WhatsApp killer' app mocked over flaws</strong> (BBC News) - <a href="https://www.bbc.com/news/world-asia-india-44326816"
-         class="uri">https://www.bbc.com/news/world-asia-india-44326816</a></p>
-   <p><strong>Protection des données : «Ce n’est pas en arrêtant les chercheurs que l’on va sécuriser les sites»</strong>
-      (Libération) - <a href="https://www.liberation.fr/planete/2018/03/29/protection-des-donnees-ce-n-est-pas-en-arretant-les-chercheurs-que-l-on-va-securiser-les-sites_1639884"
-         class="uri">https://www.liberation.fr/planete/2018/03/29/protection-des-donnees-ce-n-est-pas-en-arretant-les-chercheurs-que-l-on-va-securiser-les-sites_1639884</a></p>
-   <p><strong>Security researcher reported vulnerability on India Post server</strong> (Medianama) - <a href="https://www.medianama.com/2018/03/223-security-researcher-reported-vulnerability-on-india-post-server/"
-         class="uri">https://www.medianama.com/2018/03/223-security-researcher-reported-vulnerability-on-india-post-server</a></p>
-   <p><strong>French tech wizard hacked BSNL database of 47,000 staff</strong> (The Times of India) - <a href="https://timesofindia.indiatimes.com/city/hyderabad/french-tech-wizard-hacked-bsnl-database-of-47000-staff/articleshow/63164435.cms"
-         class="uri">https://timesofindia.indiatimes.com/city/hyderabad/french-tech-wizard-hacked-bsnl-database-of-47000-staff/articleshow/63164435.cms</a></p>
-   <p><strong>Sécurité : la série noire des smartphones Wiko continue</strong> (01net) - <a href="https://www.01net.com/actualites/securite-la-serie-noire-des-smartphones-wiko-continue-1314593.html"
-         class="uri">https://www.01net.com/actualites/securite-la-serie-noire-des-smartphones-wiko-continue-1314593.html</a></p>
-   <p><strong>Elliot 'fs0c131y' Alderson reveals: Everyone is spying</strong> (AndroidPit) - <a href="https://www.androidpit.com/elliot-fs0c131y-alderson-interview"
-         class="uri">https://www.androidpit.com/elliot-fs0c131y-alderson-interview</a></p>
-   <p><strong>OnePlus Phones Were Shipped With a Hidden Backdoor</strong> (Motherboard) - <a href="https://motherboard.vice.com/en_us/article/59y4vz/oneplus-backdoor-engineer-mode"
-         class="uri">https://motherboard.vice.com/en_us/article/59y4vz/oneplus-backdoor-engineer-mode</a></p>
-   <p><strong>OnePlus phones have an unfortunate backdoor built in</strong> (Wired) - <a href="https://www.wired.com/story/oneplus-phones-have-an-unfortunate-backdoor-built-in/"
-         class="uri">https://www.wired.com/story/oneplus-phones-have-an-unfortunate-backdoor-built-in/</a></p>
+   <div class="box">
+      <p><strong>CVE-2018-20555</strong> - <a href="https://github.com/fs0c131y/CVE-2018-20555" class="uri">https://github.com/fs0c131y/CVE-2018-20555</a></p>
+      <p><strong>CVE-2019-6447</strong> - <a href="https://github.com/fs0c131y/ESFileExplorerOpenPortVuln" class="uri">https://github.com/fs0c131y/ESFileExplorerOpenPortVuln</a></p>
+
+   </div>
+
+  
+   
+   
+   <h2 id="press-appearances" class="faded">Press appearances</h2>
+   
+   <div class="box">
+
+      <p class="faded"><strong>A popular WordPress plugin leaked access tokens capable of hijacking Twitter accounts</strong>
+            (Techcrunch) - <a href="https://techcrunch.com/2019/01/17/wordpress-plugin-leaked-twitter-account-access-tokens/"
+                  class="uri">https://techcrunch.com/2019/01/17/wordpress-plugin-leaked-twitter-account-access-tokens/</a></p>
+            <p class="faded"><strong>ES File Explorer : un célèbre explorateur de fichiers pour Android met en péril le contenu du smartphone</strong>
+            (Numerama) - <a href="https://www.numerama.com/tech/456076-es-file-explorer-un-celebre-explorateur-de-fichiers-pour-android-met-en-peril-le-contenu-du-smartphone.html"
+                  class="uri">https://www.numerama.com/tech/456076-es-file-explorer-un-celebre-explorateur-de-fichiers-pour-android-met-en-peril-le-contenu-du-smartphone.html</a></p>
+            <p class="faded"><strong>ES File Explorer Flaws Put 100 Million Users' Data at Risk, Fix Promised</strong> (BleepingComputer) - <a
+                  href="https://www.bleepingcomputer.com/news/security/es-file-explorer-flaws-put-100-million-users-data-at-risk-fix-promised/"
+                  class="uri">https://www.bleepingcomputer.com/news/security/es-file-explorer-flaws-put-100-million-users-data-at-risk-fix-promised/</a></p>
+            <p class="faded"><strong>Researcher shows how popular app ES File Explorer exposes Android device data</strong> (Techcrunch) - <a
+                  href="https://techcrunch.com/2019/01/16/android-app-es-file-explorer-expose-data/" class="uri">https://techcrunch.com/2019/01/16/android-app-es-file-explorer-expose-data/</a></p>
+            <p class="faded"><strong>Researchers downplay role of fake news and bots in France’s Yellow Vest protests</strong> (VentureBeat) -
+            <a href="https://venturebeat.com/2018/12/26/researchers-downplay-role-of-fake-news-and-bots-in-frances-yellow-vest-protests/"
+                  class="uri">https://venturebeat.com/2018/12/26/researchers-downplay-role-of-fake-news-and-bots-in-frances-yellow-vest-protests/</a></p>
+            <p class="faded"><strong>The co-opting of French unrest to spread disinformation</strong> (Wired) - <a href="https://www.wired.com/story/co-opting-french-unrest-spread-disinformation/"
+                  class="uri">https://www.wired.com/story/co-opting-french-unrest-spread-disinformation/</a></p>
+            <p class="faded"><strong>Gilets jaunes : soupçons d’ingérence en réseaux</strong> (Libération) - <a href="https://www.liberation.fr/france/2018/12/09/gilets-jaunes-soupcons-d-ingerence-en-reseaux_1697012"
+                  class="uri">https://www.liberation.fr/france/2018/12/09/gilets-jaunes-soupcons-d-ingerence-en-reseaux_1697012</a></p>
+            <p class="faded"><strong >« Gilets jaunes » : soupçons de manipulation sur les réseaux sociaux</strong> (Le Monde) - <a href="https://www.lemonde.fr/pixels/article/2018/12/09/gilets-jaunes-soupcons-de-manipulation-sur-les-reseaux-sociaux_5394890_4408996.html"
+                  class="uri">https://www.lemonde.fr/pixels/article/2018/12/09/gilets-jaunes-soupcons-de-manipulation-sur-les-reseaux-sociaux_5394890_4408996.html</a></p>
+            <p class="faded"><strong>Donald Daters, a dating app for Trump supporters, leaked its users’ data</strong> (Techcrunch) - <a href="https://techcrunch.com/2018/10/15/donald-daters-a-dating-app-for-trump-supporters-leaked-its-users-data"
+                  class="uri">https://techcrunch.com/2018/10/15/donald-daters-a-dating-app-for-trump-supporters-leaked-its-users-data/</a></p>
+            <p class="faded"><strong>'Donald Daters' the New Dating App for Trump Supporters Leaked Its Users' Data on Launch Day</strong>
+            (Time) - <a href="http://time.com/5426460/donald-daters-app-leak" class="uri">http://time.com/5426460/donald-daters-app-leak/</a></p>
+            <p class="faded"><strong>A strange phone number crept into Indian contact lists, and no one knew why</strong> (The Verge) - <a
+                  href="https://www.theverge.com/2018/8/3/17648738/india-phone-number-unknown-privacy-data-contacts-uidai" class="uri">https://www.theverge.com/2018/8/3/17648738/india-phone-number-unknown-privacy-data-contacts-uidai</a></p>
+            <p class="faded"><strong>Hacker Steals Customers' Text Messages from Android Spyware Company</strong> (Motherboard) - <a href="https://motherboard.vice.com/en_us/article/qvm44m/hacker-steals-text-messages-android-spyware-company-spyhuman"
+                  class="uri">https://motherboard.vice.com/en_us/article/qvm44m/hacker-steals-text-messages-android-spyware-company-spyhuman</a></p>
+            <p class="faded"><strong>Terri, Regina, Pearl : d’où viennent ces « bots » pornographiques qui envahissent Twitter ?</strong> (Le
+            Monde) - <a href="https://www.lemonde.fr/pixels/article/2018/02/22/terri-regina-pearl-d-ou-viennent-ces-bots-pornographiques-qui-envahissent-twitter_5260996_4408996.html"
+                  class="uri">https://www.lemonde.fr/pixels/article/2018/02/22/terri-regina-pearl-d-ou-viennent-ces-bots-pornographiques-qui-envahissent-twitter_5260996_4408996.html</a></p>
+            <p class="faded"><strong>TRAI chief shares Aadhaar number on Twitter with a dare, personal details leaked</strong> (India Today) -
+            <a href="https://www.indiatoday.in/india/story/twitterati-respond-to-trai-chief-s-aadhaar-dare-1299213-2018-07-29"
+                  class="uri">https://www.indiatoday.in/india/story/twitterati-respond-to-trai-chief-s-aadhaar-dare-1299213-2018-07-29</a></p>
+            <p class="faded"><strong>India PM Modi app sparks social media furore</strong> (BBC News) - <a href="https://www.bbc.com/news/world-asia-india-43538178"
+                  class="uri">https://www.bbc.com/news/world-asia-india-43538178</a></p>
+            <p class="faded"><strong>Baba Ramdev: India guru's 'WhatsApp killer' app mocked over flaws</strong> (BBC News) - <a href="https://www.bbc.com/news/world-asia-india-44326816"
+                  class="uri">https://www.bbc.com/news/world-asia-india-44326816</a></p>
+            <p class="faded"><strong>Protection des données : «Ce n’est pas en arrêtant les chercheurs que l’on va sécuriser les sites»</strong>
+            (Libération) - <a href="https://www.liberation.fr/planete/2018/03/29/protection-des-donnees-ce-n-est-pas-en-arretant-les-chercheurs-que-l-on-va-securiser-les-sites_1639884"
+                  class="uri">https://www.liberation.fr/planete/2018/03/29/protection-des-donnees-ce-n-est-pas-en-arretant-les-chercheurs-que-l-on-va-securiser-les-sites_1639884</a></p>
+            <p class="faded"><strong>Security researcher reported vulnerability on India Post server</strong> (Medianama) - <a href="https://www.medianama.com/2018/03/223-security-researcher-reported-vulnerability-on-india-post-server/"
+                  class="uri">https://www.medianama.com/2018/03/223-security-researcher-reported-vulnerability-on-india-post-server</a></p>
+            <p class="faded"><strong>French tech wizard hacked BSNL database of 47,000 staff</strong> (The Times of India) - <a href="https://timesofindia.indiatimes.com/city/hyderabad/french-tech-wizard-hacked-bsnl-database-of-47000-staff/articleshow/63164435.cms"
+                  class="uri">https://timesofindia.indiatimes.com/city/hyderabad/french-tech-wizard-hacked-bsnl-database-of-47000-staff/articleshow/63164435.cms</a></p>
+            <p class="faded"><strong>Sécurité : la série noire des smartphones Wiko continue</strong> (01net) - <a href="https://www.01net.com/actualites/securite-la-serie-noire-des-smartphones-wiko-continue-1314593.html"
+                  class="uri">https://www.01net.com/actualites/securite-la-serie-noire-des-smartphones-wiko-continue-1314593.html</a></p>
+            <p class="faded"><strong>Elliot 'fs0c131y' Alderson reveals: Everyone is spying</strong> (AndroidPit) - <a href="https://www.androidpit.com/elliot-fs0c131y-alderson-interview"
+                  class="uri">https://www.androidpit.com/elliot-fs0c131y-alderson-interview</a></p>
+            <p class="faded"><strong>OnePlus Phones Were Shipped With a Hidden Backdoor</strong> (Motherboard) - <a href="https://motherboard.vice.com/en_us/article/59y4vz/oneplus-backdoor-engineer-mode"
+                  class="uri">https://motherboard.vice.com/en_us/article/59y4vz/oneplus-backdoor-engineer-mode</a></p>
+            <p class="faded"><strong>OnePlus phones have an unfortunate backdoor built in</strong> (Wired) - <a href="https://www.wired.com/story/oneplus-phones-have-an-unfortunate-backdoor-built-in/"
+                  class="uri">https://www.wired.com/story/oneplus-phones-have-an-unfortunate-backdoor-built-in/</a></p>
+            
+   </div>
+
    <h2 id="tv-appearances">TV appearances</h2>
-   <p><strong>Un lanceur d'alerte français traque les sites et applications abusifs</strong> (RT France) - <a href="https://youtu.be/28NJf53apI4"
-         class="uri">https://youtu.be/28NJf53apI4</a></p>
-   <p><strong>Rencontre avec le hacker français qui fait trembler l’Inde</strong> (Quotidien) - <a href="https://www.tf1.fr/tmc/quotidien-avec-yann-barthes/videos/rencontre-hacker-francais-fait-trembler-l-inde.html"
-         class="uri">https://www.tf1.fr/tmc/quotidien-avec-yann-barthes/videos/rencontre-hacker-francais-fait-trembler-l-inde.html</a></p>
+   <div class="box">
+
+      <p class="faded"><strong>Un lanceur d'alerte français traque les sites et applications abusifs</strong> (RT France) - <a href="https://youtu.be/28NJf53apI4"
+            class="uri">https://youtu.be/28NJf53apI4</a></p>
+      <p class="faded"><strong>Rencontre avec le hacker français qui fait trembler l’Inde</strong> (Quotidien) - <a href="https://www.tf1.fr/tmc/quotidien-avec-yann-barthes/videos/rencontre-hacker-francais-fait-trembler-l-inde.html"
+            class="uri">https://www.tf1.fr/tmc/quotidien-avec-yann-barthes/videos/rencontre-hacker-francais-fait-trembler-l-inde.html</a></p>
+            
+   </div>
+
+   
    <h2 id="blog-posts">Blog posts</h2>
-   <p><strong>How I became a member of the Illuminati on Twitter</strong> - <a href="https://medium.com/@fs0c131y/how-i-became-a-member-of-the-illuminati-on-twitter-aa9e1c4c95de"
-         class="uri">https://medium.com/@fs0c131y/how-i-became-a-member-of-the-illuminati-on-twitter-aa9e1c4c95de</a></p>
-   <p><strong>Reverse Engineering of the Anubis Malware — Part 1</strong> - <a href="https://medium.com/@fs0c131y/reverse-engineering-of-the-anubis-malware-part-1-741e12f5a6bd"
-         class="uri">https://medium.com/@fs0c131y/reverse-engineering-of-the-anubis-malware-part-1-741e12f5a6bd</a></p>
-   <p><strong>How I “found” the database of the Donald Daters App</strong> - <a href="https://medium.com/@fs0c131y/how-i-found-the-database-of-the-donald-daters-app-af88b06e39ad"
-         class="uri">https://medium.com/@fs0c131y/how-i-found-the-database-of-the-donald-daters-app-af88b06e39ad</a></p>
+
+   <div class="box">
+
+
+      <p class="faded"><strong>How I became a member of the Illuminati on Twitter</strong> - <a href="https://medium.com/@fs0c131y/how-i-became-a-member-of-the-illuminati-on-twitter-aa9e1c4c95de"
+            class="uri">https://medium.com/@fs0c131y/how-i-became-a-member-of-the-illuminati-on-twitter-aa9e1c4c95de</a></p>
+      <p class="faded"><strong>Reverse Engineering of the Anubis Malware — Part 1</strong> - <a href="https://medium.com/@fs0c131y/reverse-engineering-of-the-anubis-malware-part-1-741e12f5a6bd"
+            class="uri">https://medium.com/@fs0c131y/reverse-engineering-of-the-anubis-malware-part-1-741e12f5a6bd</a></p>
+      <p class="faded"><strong>How I “found” the database of the Donald Daters App</strong> - <a href="https://medium.com/@fs0c131y/how-i-found-the-database-of-the-donald-daters-app-af88b06e39ad"
+            class="uri">https://medium.com/@fs0c131y/how-i-found-the-database-of-the-donald-daters-app-af88b06e39ad</a></p>
+
+   </div>
+
    <h2 id="links">Links</h2>
-   <p><strong>GitHub</strong> - <a href="https://github.com/fs0c131y/" class="uri">https://github.com/fs0c131y</a></p>
-   <p><strong>Twitter</strong> - <a href="https://twitter.com/fs0c131y" class="uri">https://twitter.com/fs0c131y</a></p>
-   <p><strong>Keybase</strong> - <a href="https://keybase.io/fs0c131y" class="uri">https://keybase.io/fs0c131y</a></p>
-   <p><strong>Medium</strong> - <a href="https://medium.com/@fs0c131y" class="uri">https://medium.com/@fs0c131y</a></p>
-   <p><strong>Youtube</strong> - <a href="https://www.youtube.com/channel/UCeW9xo2vZXPMEtOyRpeoiIw" class="uri">https://www.youtube.com/channel/UCeW9xo2vZXPMEtOyRpeoiIw</a></p>
+   <div class="box">
+
+      <p class="faded"><strong>GitHub</strong> - <a href="https://github.com/fs0c131y/" class="uri">https://github.com/fs0c131y</a></p>
+      <p class="faded"><strong>Twitter</strong> - <a href="https://twitter.com/fs0c131y" class="uri">https://twitter.com/fs0c131y</a></p>
+      <p class="faded"><strong>Keybase</strong> - <a href="https://keybase.io/fs0c131y" class="uri">https://keybase.io/fs0c131y</a></p>
+      <p class="faded"><strong>Medium</strong> - <a href="https://medium.com/@fs0c131y" class="uri">https://medium.com/@fs0c131y</a></p>
+      <p class="faded"><strong>Youtube</strong> - <a href="https://www.youtube.com/channel/UCeW9xo2vZXPMEtOyRpeoiIw" class="uri">https://www.youtube.com/channel/UCeW9xo2vZXPMEtOyRpeoiIw</a></p>
+
+   </div>
+   
    <h2 id="donation">Donation</h2>
-   <p><strong>PayPal</strong> - <a href="https://www.paypal.me/fs0c131y" class="uri">https://www.paypal.me/fs0c131y</a></p>
-   <p><strong>Bitcoin</strong> - <a>3BToAehWHeyGcHDtQLFL3YMUbnWTcLzjzX</a></p>
+   <div class="box">
+
+      <p class="faded"><strong>PayPal</strong> - <a href="https://www.paypal.me/fs0c131y" class="uri">https://www.paypal.me/fs0c131y</a></p>
+      <p class="faded"><strong>Bitcoin</strong> - <a>3BToAehWHeyGcHDtQLFL3YMUbnWTcLzjzX</a></p>
+
+   </div>
+
    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
+<br><br>
+<footer style="display: table; margin: 0 auto;">
+
+      <small style="text-align:center;">&copy;2019 fs0c131y</small>
+
+</footer>
 
 </html>
