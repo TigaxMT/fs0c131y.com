@@ -61,18 +61,6 @@ p {
 	font-family: 'VT323', monospace;
 }
 
-.box {
-
-	width: 75%;
-	height: auto;
-	background-color: #3D3D3D;
-	display: table;
-	margin: 0 auto;
-	padding: 10px;
-	border-radius: 1%;
-  	box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19);
-  	text-align: center;
-}
 
 .faded {
 
